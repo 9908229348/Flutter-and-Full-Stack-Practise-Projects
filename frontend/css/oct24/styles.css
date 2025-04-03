@@ -1,0 +1,71 @@
+html {
+    font-size: 16px;
+}
+
+.parent {
+    font-size: 20px;
+}
+
+.em {
+    font-size: 2em;
+}
+
+.rem {
+    font-size: 3em;
+}
+
+.float p {
+    width: 33.33%;
+    float: right;
+}
+
+.para1 {
+    background-color: aqua;
+    width: 33.33%;
+    float: left;
+}
+
+.para2 {
+    background-color: blue;
+    width: 33.33%;
+
+}
+
+.para3 {
+    background-color: brown;
+    width: 33.33%;
+
+}
+
+.para4 {
+    background-color: blueviolet;
+    clear: right;
+}
+
+.inline {
+    background-color: red;
+    display: inline-block;
+    width: 100vw;
+}
+
+.block {
+    background-color: aquamarine;
+}
+
+.media {
+    background-color: aqua;
+}
+
+@media screen and (max-width: 600px) {
+    .media {
+        background-color: brown;
+    }
+
+}
+
+@media print and (max-width: 320px) {
+    .media {
+        background-color: black;
+    }
+
+}

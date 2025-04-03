@@ -1,0 +1,5 @@
+package com.XAdmin.UserManagement.model;
+
+public class User {
+
+}

@@ -1,0 +1,10 @@
+<div class="container">
+    <p>services works!</p>
+    <ng-container *ngFor="let user of users">
+        <p>username : {{ user.name }}</p>
+        <p>email : {{ user.email }}</p>
+        <hr>
+    </ng-container>
+    <app-services1></app-services1>
+    <app-services2></app-services2>
+</div>

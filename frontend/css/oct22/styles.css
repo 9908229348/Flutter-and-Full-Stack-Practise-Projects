@@ -1,0 +1,47 @@
+div.para {
+    background-color: green;
+}
+
+/* THis will work if the span is under div(even if it is grandparent) */
+div span {
+    color: aquamarine;
+}
+
+/* this works if span is child of p */
+p>span {
+    background-color: pink;
+}
+
+/* ul li {
+    color: blue;
+    font-style: italic;
+}
+
+ul>li {
+    color: blue;
+    font-style: italic;
+} */
+
+li.item2+li {
+    color: red;
+}
+
+li.item2-li {
+    color: orange;
+}
+
+li:hover{
+    background-color: cadetblue;
+}
+
+input:focus{
+    background-color: red;
+}
+
+a:visited{
+    color: green;
+}
+
+a:active{
+    color: red;
+}

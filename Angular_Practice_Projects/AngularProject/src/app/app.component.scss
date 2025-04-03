@@ -1,0 +1,210 @@
+// @use "sass:map";
+
+// // .main_container {            //nested styles possible in scss not in css
+// //     h2 {
+// //         color: aqua;
+// //     }
+
+// //     .container {
+// //         height: 40px;
+
+// //         .row {
+// //             width: 100%;
+// //             display: flex;
+// //             background-color: brown;
+// //             padding: 2rem;
+
+// //             .col-3 {
+// //                 background-color: aliceblue;
+// //                 width: 25%;
+
+// //                 span{
+// //                     color: blue;
+// //                 }
+// //             }
+// //         }
+// //     }
+// // }
+
+// $success-color: greenyellow; //variables
+// $warning-color: orangered;
+// $default-color: grey;
+// $primary-color: aqua;
+// $danger-color: red;
+// $font-size: 12px;
+
+// $theme-colors: (
+//     //map
+//     "success": green,
+//     "warning": orangered,
+// );
+
+// .container {
+//     .override {
+//         $primary-color: blue !global;           //change of a variable globally
+
+//         .btn-primary {
+//             background-color: $primary-color;
+//         }
+//     }
+
+//     .btn {
+//         color: white;
+//         padding: 12px 20px;
+//         font-size: $font-size;
+//         border: none;
+//         cursor: pointer;
+//         transition: background-color 0.3s ease;
+//         margin-right: 1rem;
+//         background-color: black;
+//         border-radius: 10px;
+
+//         &-warning {
+//             background-color: var(--warning-color); //global css variable in styles.scss file
+//         }
+
+//         &-default {
+//             background-color: $default-color;
+//         }
+
+//         &-success {
+//             background-color: $success-color;
+//         }
+
+//         &-primary {
+//             background-color: $primary-color;
+//         }
+//     }
+
+//     .btn-primary {
+//         background-color: $primary-color;
+
+//         &:hover {
+//             //.btn-primary:hover
+//             background-color: map.get($theme-colors, "warning"); //map variables usage
+//         }
+
+//         &:focus {
+//             background-color: $danger-color;
+//         }
+//     }
+// }
+
+// $property-key : color;
+// $value: red;
+// $warning: "warning";
+
+// .container {
+//     #{$property-key}: #{value}
+// }
+
+// .button-style {                // reuse the same styles at multiple places
+//     color: white;
+//     padding: 12px 20px;
+//     font-size: 16px;
+//     border: none;
+//     cursor: pointer;
+//     transition: background-color 0.3s ease;
+//     margin-right: 1rem;
+//     background-color: black;
+//     border-radius: 10px;
+//     margin: 1rem;
+// }
+
+// .btn-warning {
+//     background-color: orangered;
+//     @extend .button-style // to use the above style
+// }
+
+// .btn-default {
+//     background-color: aqua;
+//     @extend .button-style //to use the above style
+
+// }
+
+// .btn-success {
+//     background-color: green;
+//     @extend .button-style //to use the above style
+
+// }
+
+// .btn-primary {
+//     background-color: blue;
+//     @extend .button-style // to use the above style
+// }
+
+// @mixin button-style($padding, $color, $font-size, $bg-color) {
+//     // mixin : reuse of same styles and we can use dynamic styles each element
+//     color: $color;
+//     padding: $padding;
+//     font-size: $font-size;
+//     border: none;
+//     cursor: pointer;
+//     transition: background-color 0.3s ease;
+//     margin-right: 1rem;
+//     background-color: $bg-color;
+//     border-radius: 10px;
+//     margin: 1rem;
+// }
+
+// .btn-warning {
+//     @include button-style(12px, white, 16px, orangered)
+// }
+
+// .btn-default {
+//     @include button-style(12px, white, 16px, acqa)
+// }
+
+// .btn-success {
+//     @include button-style(12px, white, 16px, green)
+// }
+
+// .btn-primary {
+//     @include button-style(12px, white, 16px, blue)
+// }
+
+// $theme: light;
+
+// @function theme-background($theme) {
+//     @if ($theme =='light') {
+//         @return green;
+//     }
+
+//     @else if $theme =='dark' {
+//         @return black;
+//     }
+
+//     @else {
+//         @return #f0f0f0;
+//     }
+// }
+
+// .theme-container {
+//     height: 200px;
+//     background-color: theme-background($theme);
+// }
+
+// h2{
+//     color: aqua;
+// }
+
+// p{
+//     background-color: red;
+//     color: black;
+// }
+
+.div_element{
+    text-transform: uppercase;
+}
+
+.example{
+    color: palevioletred;
+}
+
+.highlight{
+    background-color: red;
+}
+
+.active{
+    color: green;
+}

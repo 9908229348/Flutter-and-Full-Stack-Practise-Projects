@@ -1,0 +1,37 @@
+<p>templateref works!</p>
+
+
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" #userEmail value="sravanthi@gmail.com"> // # used
+    for template reference
+</div>
+<button type="submit" class="btn btn-primary" (click)="submitEmail(userEmail)">Submit</button>
+<br>
+
+<!--ViewChild, ViewChildren can get properties with out giving email to fun using viewchild -->
+
+<button type="submit" class="btn btn-primary" (click)="submitEmailByViewChild()">Submit from view child</button>
+
+<!-- ViewChildren -->
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address 1</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" #userEmailFromViewChildren
+        value="sravanthi@gmail.com">
+</div>
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address 2</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" #userEmailFromViewChildren
+        value="sravanthi@gmail.com">
+</div>
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address 3</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" #userEmailFromViewChildren
+        value="sravanthi@gmail.com">
+</div>
+<button type="submit" class="btn btn-primary" (click)="submitEmailsFromViewChildren()">Submit from view child</button>
+
+<!-- ngTemplate and ngContainer -->
+<div *ngIf="isUser">User is Present</div>
+<ng-template #isUser>User is not present</ng-template>
+<hr>

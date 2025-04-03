@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rowspan in Html table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>rowspan with td (table data)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ajay</td>
+                <td rowspan="2">24</td>
+            </tr>
+            <tr>
+                <td>Priya</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>rowspan with th (table head)</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th rowspan="3">FrontEnd Developer</th>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>25</td>
+        </tr>
+    </table>
+</body>
+</html>

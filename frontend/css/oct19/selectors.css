@@ -1,0 +1,74 @@
+
+/*    -----------------Universal Selector-----------------
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+*/
+
+/* ---------------Element Selector---------- */
+span{
+    font-size: larger;
+    color: red;
+}
+
+/* ---------------Class Selector------------------ */
+.front_end{
+    background-color: yellow;
+    color: green;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* -----------------ID Selector---------------------- */
+#developer{
+    background-color: yellow;
+    color: green;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* -------------------------Attribute Selector------------------ */
+input[type = "text"]{
+    border-color: red;
+}
+
+input[type = "number"]{
+    border-color: green;
+}
+
+/* --------------------------Descendent Selector---------------------- */
+li {
+    list-style-type: disc;
+  }
+  
+  li li {
+    list-style-type: circle;
+  }
+
+  /* -------------------Group Selector------------------------ */
+  pre, blockquote {
+    color: greenyellow;
+  }
+
+  /* ----------------Pseudo Element Selector-- or -nth element slector---------------- */
+  li:last-child{
+    color: brown;
+  }
+  li:first-child{
+    color: cadetblue;
+  }
+
+  li:nth-child(8){
+    color: chocolate;
+  }
+  .para:last-child{
+    color: blueviolet;
+  }
+
+  /* --------------------Not Selector------------------------------ */
+
+  p:not(.para){
+    background-color: hotpink;
+  }

@@ -1,0 +1,5 @@
+package com.XAdmin.UserManagement.web;
+
+public class UserServlet {
+
+}

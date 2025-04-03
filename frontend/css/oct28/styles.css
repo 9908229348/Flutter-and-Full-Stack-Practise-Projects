@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 1rem;
+    background: lightgray;
+    display: grid;
+    /* grid-template-columns: 30% 30% 30%; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: 200px 300px auto; */
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(autofit, minmax(200px, 1fr)); */
+    /* column-gap: 20px;
+    row-gap: 20px; */
+    gap: 20px;
+}
+
+.para {
+    background-color: steelblue;
+    padding: 1rem;
+    color: white;
+}
+
+.container2 {
+    margin: 1rem;
+    background: lightgray;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 20px;
+}
+
+.para2 {
+    background-color: steelblue;
+    padding: 1rem;
+    color: white;
+}
+
+.outer_box {
+    display: grid;
+    margin: 1rem;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 200px;
+    grid-auto-rows: 300px;
+}
+
+.box {
+    background-color: lightcoral;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.box1 {
+    /* grid-column: 1/4; */
+    /* grid-column-start: 1;
+    grid-column-end: -3; */
+    grid-column: span 2;
+}
+
+.box2 {
+    /* align-self: center; */
+    grid-row: span 4;
+}
+
+.layout {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.layout div {
+    border: 1px solid black;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+
+.header {
+    grid-column: span 5;
+}
+
+.footer {
+    grid-column: span 5;
+}
+
+.main {
+    grid-column: span 3;
+}
+
+/* another grid area concept */
+/* .layout {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        'h h h h h',
+        's1 m m m s2',
+        'f f f f f'
+    ;
+}
+
+.layout div {
+    border: 1px solid black;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+
+.header {
+    grid-area: h;
+}
+
+.footer {
+    grid-area: f;
+}
+
+.main {
+    grid-area: m;
+}
+
+.sidebar1 {
+    grid-area: s1;
+}
+
+.sidebar2 {
+    grid-area: s2;
+} */

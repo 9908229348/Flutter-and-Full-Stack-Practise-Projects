@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table with colspan</title>
+        <style>
+            table,th,td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>colspan with td (table data)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Expense</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arun</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Priya</td>
+                    <td>$8</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Sum : $18</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2>colspan with th (table head)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Expense</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arun</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Priya</td>
+                    <td>$8</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </body>
+</html>

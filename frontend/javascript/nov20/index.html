@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+</head>
+
+<body onload="onload()">
+    <h1>JavaScript DOM <b id="bold_element">(Document Object Model)</b> Manipulation</h1>
+    <button onclick="addClassName()">Add Class name</button>
+    <button onclick="removeClassName()">Remove class name</button>
+    <button onclick="changeContent()">Change content</button>
+    <p id="p_element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident animi distinctio sequi voluptates explicabo
+        nostrum unde dolorum. Fugit voluptatibus aliquid pariatur! Perferendis rerum, quae molestiae nulla a nobis
+        obcaecati temporibus</p>
+    <ul id="ul_container">
+        <li class="li_element">Example 1</li>
+        <li class="li_element" onclick="removeElement(event)">Example 2</li>
+    </ul>
+    <button onclick="addUlLiEle()">Add Element</button>
+</body>
+</html>

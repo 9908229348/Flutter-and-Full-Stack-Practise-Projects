@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_header {
+    margin: 0px 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+svg {
+    width: 144px;
+    height: 90px;
+}
+
+.header_icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_icons .products {
+    margin: 0.75rem 1rem;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.header_icons .products:hover {
+    color: #007bc0;
+}
+
+.header_icons .ourcompany {
+    margin: 0.75rem 1rem;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.header_icons .ourcompany:hover {
+    color: #007bc0;
+}
+
+.header_icons .careers {
+    margin: 0.75rem 1rem;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.header_icons .careers:hover {
+    color: #007bc0;
+}
+
+.header_icons .www_icon {
+    padding: 12px;
+    size: 24px 24px;
+}
+
+.header_icons .www_icon:hover {
+    color: #007bc0;
+}
+
+.header_icons .search_icon {
+    padding: 12px;
+    size: 24px 24px;
+}
+
+.header_icons .search_icon:hover {
+    color: #007bc0;
+}
+
+.header_icons .menu_icon {
+    padding: 12px;
+    size: 24px 24px;
+}
+
+.header_icons .menu_icon:hover {
+    color: #007bc0;
+}
+
+.home_careers_boschin_india {
+    margin: 0px 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home_careers_boschin_india .home_careers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_careers_boschin_india a {
+    text-decoration: none;
+    color: black;
+}
+
+.home_careers_boschin_india a:hover {
+    text-decoration: underline;
+    color: #007bc0;
+}
+
+.home_careers_boschin_india .right_arrow {
+    padding: 0px 1rem;
+
+}
+
+.home_careers_boschin_india .bosch_in_india {
+    font-weight: 700;
+    padding: .75rem 0;
+}
+
+.container_work_like_bosch {
+    margin: 0 1rem;
+    padding: 20px 0px;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    padding-bottom: 10px;
+}
+
+.button {
+    color: white;
+    background-color: #007bc0;
+    border: none;
+    font-size: 16px;
+    margin: 0px 1rem;
+    padding: 12px 16px;
+}
+
+.button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+hr {
+    margin: 0px 1rem;
+}
+
+img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0px;
+}
+
+.middle_navigation_texts {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 20px 60px;
+}
+
+.sticky_bar {
+    position: sticky;
+
+}
+
+.middle_navigation_texts .why_bosch:hover {
+    color: #007bc0;
+}
+
+.middle_navigation_texts .your_entry {
+    padding: 0px 2rem;
+}
+
+.middle_navigation_texts .your_entry:hover {
+    color: #007bc0;
+}
+
+.middle_navigation_texts .social_media:hover {
+    color: #007bc0;
+}
+
+.section1 {
+    margin: 0px 1rem;
+    padding: 6rem 0px;
+}
+
+h2 {
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+p {
+    width: 60%;
+    font-size: 1rem;
+}
+
+.section2 {
+    margin: 0px 1rem;
+}
+
+.section2 .text {
+    font-size: 1.5rem;
+}
+
+.image_with_expanded {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+.image_with_expanded .grow_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image_with_expanded .grow_text:hover {
+    color: #007bc0;
+    cursor: pointer;
+}
+
+.image_with_expanded .enjoy_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image_with_expanded .enjoy_text:hover {
+    color: #007bc0;
+    cursor: pointer;
+
+}
+
+.image_with_expanded .inspire_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image_with_expanded .inspire_text:hover {
+    color: #007bc0;
+    cursor: pointer;
+}
+
+.sized_box_height_3rem {
+    height: 3rem;
+}
+
+.section3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 1rem;
+    align-items: center;
+}
+
+.sizedbox_height1rem {
+    height: 1rem;
+}
+
+.section3 .section3_text {
+    margin-left: 3rem;
+}
+
+.section3 .section3_text .download {
+    color: #007bc0;
+}
+
+.section4 {
+    margin: 0px 1rem;
+    width: 60%;
+}
+
+.section4 .text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.section5 {
+    margin: 1rem;
+}
+
+.section6 {
+    margin: 1rem;
+}
+
+.section7 {
+    margin: 1rem;
+}
+
+.section8{
+    margin: 1rem;
+}
+
+.linkedin_blog {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.linkedin_container {
+    background-color: black;
+    height: 20rem;
+    min-width: 48%;
+    max-width: 90%;
+}
+
+.blog-container {
+    background-color: black;
+    height: 20rem;
+    min-width: 48%;
+    max-width: 90%;
+}
+
+.link_texts {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_container{
+    background-color: black;
+}

@@ -1,0 +1,21 @@
+body {
+    background-image: url("https://science4fun.info/wp-content/uploads/2017/05/tree.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+.boxmodel{
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: red;
+}
+
+.borderbox{
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: red;
+    box-sizing: border-box;
+}

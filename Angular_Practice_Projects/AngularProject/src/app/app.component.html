@@ -1,0 +1,269 @@
+<!-- <div class="main_container">
+    <h2>TypeScript</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"><span>1</span></div>
+            <div class="col-3"><span>2</span></div>
+            <div class="col-3"><span>3</span></div>
+            <div class="col-3"><span>4</span></div>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="container">
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-warning">Warning</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-default">Default</button>
+
+    <div class="override">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-primary">Primary</button>
+    </div>
+</div>
+
+<div class="theme-container">
+
+</div> -->
+
+<!-- <app-header></app-header>
+
+<hr>
+
+<h2>App Component</h2>
+
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-primary">Primary</button>
+
+<hr>
+
+<app-dashboard></app-dashboard> -->
+
+<h2>Interpolation - Single data Binding</h2>
+<p>{{ userName }}</p>
+<p>{{ getName() }}</p>
+<p>{{ isUserLoggedIn ? 'Welcome User': 'Please Login' }}</p>
+<p>{{ employee?.employeeName }}</p>
+<p>{{ user?.userName }}</p>
+
+<div [innerText]='userName'></div>
+
+<img src="{{ imgAddress }}" alt="">
+<img [src]="imgAddress" alt="">                     //property binding
+
+<hr>
+
+<h2>Difference between property Binging and String Interpolation</h2>
+
+<button disabled="{{ isDisabled}}" class="m-5 btn btn-sm-primary btn-primary">Login</button>
+<button [disabled]="isDisabled" class="btn btn-sm-primary btn-primary">Login</button>
+
+<hr>
+<!-- Event Binding -->
+
+<button class="btn btn-outline-secondary" (click)="onClick($event)">Click</button>
+<br>
+<label for="">On Change</label>
+<input type="text" (change)="handleOnChange($event)">
+
+<select (change)="selectOnChange($event)">
+    <option value="option1">option1</option>
+    <option value="option2">option2</option>
+    <option value="option3">option3</option>
+</select>
+
+<br><br>
+
+<input type="checkbox" (change)="onCheckbox($event)">
+
+<br>
+<label for="">Input Event</label>
+<input type="text" (input)="handleInput($event)">
+<br>
+<br>
+<input type="text" (focus)="handleFocus($event)">
+<br><br>
+<input type="text" (keydown)="handleKeydown($event)">
+<br><br>
+
+<form (submit)="handleSubmit($event)">
+    <button class="btn-outline-secondary" type="submit">Submit</button>
+</form>
+
+<hr>
+
+<!-- Two-way Data Binding -->
+<input type="text" [(ngModel)]="userName">
+<div>{{ userName }}</div>
+<br><br>
+<h2>Directives : classes that add additional behavior to angular</h2>
+<h3>Three types</h3>
+<ul>
+    <li>Component Directive</li>
+    <li>Structural Directive : alter structure of DOM</li>
+    <li>Attribute Directive</li>
+</ul>
+
+<!-- Multiple ng classes -->
+<h2>Attribute Directive</h2>
+
+<div [ngClass]=" ['div_element', 'example']">
+    normal
+</div>
+
+<!-- Dynamic ngclass -->
+
+<div [ngClass]="{'active': isActive, 'highlight':isHighlight}">Dynamic NgClass</div>
+
+<br><br>
+
+<!-- function NGClass -->
+<div [ngClass]='getClassNames()'>Function Ng Class</div>
+
+<br><br>
+
+<!--Dynamic Ng-Styling -->
+<div [ngStyle]="{'color': colorValue, 'background-color': bgColor}">Ng Styling</div>
+
+<h2>Structural Directive</h2>
+<div *ngIf='isStructuralDirective'>Active</div>
+<div *ngIf='!isStructuralDirective'>NotActive</div>
+
+<div>Ng For</div>
+<div *ngFor="let item of items; let i = index; let isFirst = first;">
+    <span>{{i}}</span>
+    <p>{{item}}</p>
+</div>
+
+<hr>
+<hr>
+
+<h2>Ng If</h2>
+
+<div *ngIf="userRole === 'Admin'">
+    <h2>Welcomw Admin</h2>
+    <p>You Have Full access to manage the system</p>
+</div>
+<div *ngIf="userRole === 'Viewer'">
+    <h2>Welcomw Admin</h2>
+    <p>You Have access to View the system</p>
+</div>
+<div *ngIf="userRole === 'Guest'">
+    <h2>Welcomw Admin</h2>
+    <p>You Have access to View the system</p>
+</div>
+<div *ngIf="userRole === 'Editor'">
+    <h2>Welcomw Admin</h2>
+    <p>You Have access to Edit the system</p>
+</div>
+
+<h2>Ng Switch</h2>
+
+<div [ngSwitch]='userRole'>
+    <div *ngSwitchCase="'Admin'">
+        <h2>Welcomw Admin</h2>
+        <p>You Have Full access to manage the system</p>
+    </div>
+    <div *ngSwitchCase="'Guest'">
+        <h2>Welcomw Guest</h2>
+        <p>You Have Full access to manage the system</p>
+    </div>
+    <div *ngSwitchCase="'Editor'">
+        <h2>Welcomw Editor</h2>
+        <p>You Have Full access to manage the system</p>
+    </div>
+    <div *ngSwitchDefault>
+        <h2>Welcomw Default</h2>
+        <p>You Have Full access to manage the system</p>
+    </div>
+</div>
+
+<h2>App Components</h2>
+<div *ngIf="true">
+    <p> Render this based on the condition ngIf
+    </p>
+</div>
+<div [hidden]="false">
+    <p> Render this based on the condition hidden
+    </p>
+</div>
+
+<h2>Add User</h2>
+<input type="text" [(ngModel)]="besantUserName">
+<button (click)="addUser()">
+    Add User
+</button>
+
+<app-adduser *ngFor="let user of userList" [User]="user">
+</app-adduser>
+
+<app-user (name)="getDataFromChild($event)"></app-user>
+
+<app-adduser [userName]="userNameFromSibling" [User] = "userNameFromSibling">            //data sharing between siblings through parent
+</app-adduser>
+
+<!-- Template Reference :  -->
+
+<app-templateref #templateref></app-templateref>
+<app-templateref2 [getUser]="templateref"></app-templateref2>
+
+
+
+
+

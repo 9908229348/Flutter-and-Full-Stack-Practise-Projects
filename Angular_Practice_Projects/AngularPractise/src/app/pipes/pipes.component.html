@@ -1,0 +1,52 @@
+<!-- 
+<ng-container *ngIf="list.length > 0;">
+    <ng-container *ngFor="let item of list">
+      <ng-container *ngIf="item.todo;">
+        <p>{{ item.todo }}</p>
+      </ng-container>
+      <div *ngIf="!item.todo">
+            <p>No todo Present</p>
+          </div>
+    </ng-container>
+  </ng-container> -->
+
+<ng-container *ngIf="list.length > 0;">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <td scope="col">userid</td>
+        <td scope="col">id</td>
+        <td scope="col">Completed</td>
+        <td scope="col">Todo</td>
+        <td scope="col">Price</td>
+        <td scope="col">Discount</td>
+        <td scope="col">Date</td>
+        <td scope="col">Json</td>
+
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let item of list">
+        <tr>
+          <td>{{ item.userId}}</td>
+          <td>{{ item.id}}</td>
+          <!-- custom pipe:cap -->
+          <td>{{ item.completed | cap}}</td>
+          <!-- default pipe : lowercase, uppercase -->
+          <td>{{ item.todo | uppercase}}</td>
+          <!-- default pipe : currency pipe -->
+          <td>{{ item.price | currency: 'INR'}}</td>
+          <td>{{item.price | discount}}</td>
+          <!-- default pipe : percent pipe -->
+          <!-- <td>{{ item.price | percent: '4.3-5'}}</td> -->
+          <!-- default pipe : decimal pipe -->
+          <!-- <td>{{ item.price | number: '4.3-5'}}</td> -->
+          <!-- default pipe : datepipe -->
+          <td>{{ item.date | date:"medium"}}</td>
+          <!-- default pipe : json -->
+          <td>{{item | json}}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</ng-container>

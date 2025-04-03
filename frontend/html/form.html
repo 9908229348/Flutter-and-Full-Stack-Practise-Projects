@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form in Html</title>
+</head>
+
+<body>
+    <h2>Form</h2>
+    <form action="action_page.php" method="post">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div>
+                <label for="fname">First Name :</label>
+                <input type="text" name="fname" id="fname" placeholder="George" required>
+            </div>
+            <br>
+            <div>
+                <label for="lname">Last Name :</label>
+                <input type="text" name="lname" id="lname" placeholder="Peter" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Password :</label>
+                <input type="password" name="password" id="password" maxlength="12" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" required placeholder="peter@gmail.com">
+            </div>
+            <br>
+            <div>
+                <label for="phone">Phone #:</label>
+                <input type="tel" name="phone" id="phone" placeholder="6736784987">
+            </div>
+            <br>
+            <div>
+                <label for="bdate">BirthDate #:</label>
+                <input type="date" name="bdate">
+            </div>
+            <br>
+            <div>
+                <label for="quantity">Quantity #:</label>
+                <input type="number" name="quantity" id="quantity" min="0" max="99">
+            </div>
+            <br>
+            <div>
+                <label for="title">Title :</label>
+                <label for="Mr.">Mr.</label>
+                <input type="radio" name="title" id="Mr.">
+                <label for="Ms.">Ms.</label>
+                <input type="radio" name="title" id="Ms.">
+                <label for="Mrs.">Mrs.</label>
+                <input type="radio" name="title" id="Mrs.">
+            </div>
+            <br>
+            <div>
+                <label for="payment">Payment :</label>
+                <select name="payment" id="payment">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="giftcard">GiftCard</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="resume">Upload Resume :</label>
+                <input type="file" name="resume" id="resume">
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe : </label>
+            </div>
+            <br>
+            <div>
+                <input type="reset" name="reset">
+                <input type="submit" name="submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
